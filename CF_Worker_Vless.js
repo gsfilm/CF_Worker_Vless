@@ -104,7 +104,7 @@ export default {
 							});
 						}
 					default:
-						url.hostname = 'tv.cctv.com';	// 伪装域名
+						url.hostname = 'igmsy.xyz';	// 伪装域名
 						url.protocol = 'https:';
 						request = new Request(url, request);
 						return await fetch(request);
