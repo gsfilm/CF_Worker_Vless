@@ -597,7 +597,7 @@ async function handleUDPOutBound(webSocket, vlessResponseHeader, log) {
 
 function getVLESSConfig(userID, hostName) {
 	const vlessws = `vless://${userID}@time.cloudflare.com:8880?encryption=none&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`
-	const vlesswstls = `vless://${userID}@time.cloudflare.com:8443?encryption=none&security=tls&type=ws&host=兄弟，你的自定义域名呢？&path=%2F%3Fed%3D2048#${hostName}`
+	const vlesswstls = `vless://${userID}@time.cloudflare.com:8443?encryption=none&security=tls&type=ws&host=自定义域名&path=%2F%3Fed%3D2048#${hostName}`
 	return `
 
 ==========================配置详解==============================
@@ -634,7 +634,7 @@ ${vlesswstls}
 端口(port)：6个https端口可任意选择(443、8443、2053、2083、2087、2096)
 用户ID（uuid）：${userID}
 传输协议（network）：ws/websocket
-伪装域名（host）：兄弟，你的自定义域名呢？
+伪装域名（host）：绑定的自定义域名
 路径（path）：/?ed=2048
 传输安全（TLS）：开启
 跳过证书验证（allowlnsecure）：false
