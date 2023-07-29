@@ -1,10 +1,9 @@
 //	www.igmsy.xyz
-import {
-	connect
-} from 'cloudflare:sockets';
+
+import { connect } from 'cloudflare:sockets';
 
 // UUID设置
-let userID = '88888888-4444-4444-4444-121212121212';
+let userID = 'b1e1dbcd-a89b-45ab-b093-92bec853286f';
 
 const proxyIPs = ['cdn-all.xn--b6gac.eu.org', 'cdn.xn--b6gac.eu.org', 'cdn-b100.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn.anycast.eu.org'];
 
