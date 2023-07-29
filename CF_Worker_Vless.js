@@ -19,7 +19,7 @@ let apiToken = ''; //abcdefghijklmnopqrstuvwxyz123456
 let apiHost = ''; // api.v2board.com
 
 if (!isValidUUID(userID)) {
-	throw new Error('uuid is not valid');
+	throw new Error('UUID配置无效！');
 }
 
 export default {
@@ -604,7 +604,7 @@ function getVLESSConfig(userID, hostName) {
 
 
 ################################################################
-一、CF-workers-vless+ws节点，分享链接如下：
+一、CF_Workers_Vless_ws节点，分享链接如下：
 
 ${vlessws}
 
@@ -622,7 +622,7 @@ ${vlessws}
 
 
 ################################################################
-二、CF-workers-vless+ws+tls节点，分享链接如下：
+二、CF_Workers_Vless_ws_tls节点，分享链接如下：
 
 ${vlesswstls}
 
@@ -654,9 +654,9 @@ clash-meta
   sni: ${hostName}
   client-fingerprint: chrome
   ws-opts:
-    path: "/?ed=2048"
-    headers:
-      host: ${hostName}
+  path: "/?ed=2048"
+  headers:
+  host: ${hostName}
 ---------------------------------------------------------------
 ################################################################
 `;
